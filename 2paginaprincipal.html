@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="7estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido A Mi Pagina</h1>
+        <p>Esta página contiene los siguientes enlaces a otras páginas:</p>
+        <ul>
+            <li><a href="index.html">Inicio</a> - Esta página proporciona una introducción a nuestro sitio y destaca los temas principales que se tratan.</li>
+            <li><a href="3pagina API.html">Página API</a> - Aquí puedes encontrar información sobre cómo interactuar con nuestras APIs, incluyendo ejemplos de uso y documentación técnica.</li>
+            <li><a href="4formulario.html">Página Formulario</a> - En esta sección, puedes encontrar formularios para enviar datos o realizar solicitudes específicas a nuestro sistema.</li>
+            <li><a href="5operaciones.html">Página Operaciones</a> - Esta página detalla las distintas operaciones disponibles, incluyendo manipulación de datos y procesos que pueden ser ejecutados.</li>
+        </ul>
+    </header>
+
+    <main>
+        <h2>¡Bienvenido!</h2>
+        <label for="username">Por favor, ingresa tu nombre:</label>
+        <input type="text" id="username" placeholder="Tu nombre aquí">
+        <button onclick="welcomeUser()">Enviar</button>
+
+        <p id="welcomeMessage"></p>
+    </main>
+
+    <footer>
+        <p>&copy; Marcelo Gonzalez - Ñemby - 2024</p>
+    </footer>
+
+    <script>
+        function welcomeUser() {
+            const username = document.getElementById('username').value;
+            const welcomeMessage = document.getElementById('welcomeMessage');
+            if (username) {
+                welcomeMessage.textContent = `¡Bienvenido, ${username}!`; // Usar backticks
+            } else {
+                welcomeMessage.textContent = "Por favor, ingresa un nombre.";
+            }
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Color de fondo modificado */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+header {
+    background: #35424a;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    color: #4CAF50; /* Mantener el color verde para h1 */
+}
+
+h2 {
+    color: #4CAF50; /* Añadido para h2 */
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1; /* permite que el contenedor ocupe el espacio disponible */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centra el contenido en el eje horizontal */
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="number"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin: 10px; /* Mantener margenes */
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #4CAF50; /* Color verde para el botón */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049; /* Cambia a un verde más oscuro al pasar el cursor */
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #35424a; /* Fondo del pie de página */
+    color: white;
+    position: relative; /* Cambiado a relative para posicionamiento */
+    width: 100%;
+}

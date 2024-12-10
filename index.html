@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio - Login</title>
+    <link rel="stylesheet" href="7estilo.css"> <!-- Vincular el archivo CSS -->
+</head>
+<body>
+    <div class="login-container">
+        <h2>Bienvenido al sitio web</h2>
+        <form id="loginForm">
+            <label for="username">Nombre de usuario:</label>
+            <input type="text" id="username" placeholder="Usuario" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" placeholder="Contraseña" required>
+
+            <button type="submit">Iniciar sesión</button>
+        </form>
+
+        <p id="message"></p> <!-- Aquí aparecerá el mensaje de éxito o error -->
+
+        <div id="emailMessage"></div> <!-- Aquí se simula el correo enviado -->
+    </div>
+
+    <script src="6script.js"></script> <!-- Vincular el archivo JS -->
+</body>
+</html>
